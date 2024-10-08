@@ -14,8 +14,8 @@ function App() {
     <Layout>
  
       <Book title="Book1" author="LOTM" image="./images/images/images.jpg"/>
-      <Book title="Book1" author="ORV" image="./images/images/orv.jpg"/>
-      <Book title="Book1" author="Jojo" image="./images/images/book1.jpg"/>
+      <Book title="Book2" author="ORV" image="./images/images/orv.jpg"/>
+      <Book title="Book3" author="Jojo" image="./images/images/book1.jpg"/>
 
       </Layout>
    
