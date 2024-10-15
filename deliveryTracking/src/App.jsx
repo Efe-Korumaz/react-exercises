@@ -18,7 +18,7 @@ function App() {
         <PackageOrder
           naam="package from Schiedam"
           productId="ID:2"
-          status="depending"
+          status="on the way"
         />
         <PackageOrder
           naam="package from rotterdam"
