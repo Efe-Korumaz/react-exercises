@@ -4,14 +4,36 @@
   box-sizing: border-box;
 }
 
+body {
+  padding: 20;
+}
+
 nav {
+  position: absolute;
   background-color: black;
-  width: 10vw;
+  width: 7vw;
   height: 100vh;
 }
 
+li {
+  margin-left: 10px;
+}
+
 .container {
-  width: 80vw;
-  margin: auto;
-  background-color: aqua;
+  position: relative;
+  top: 40px;
+  margin-left: 300px;
+  width: 20vw;
+  height: 90vh;
+  background-color: black;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+}
+
+
+
+.orders {
+  font-size: small;
+  border: 1px solid white;
 }

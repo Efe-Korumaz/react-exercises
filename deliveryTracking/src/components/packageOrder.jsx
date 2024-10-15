@@ -1,12 +1,12 @@
+
 const PackageOrder = ({naam, productId, status }) => {
-    return 
-    (
-            <section>
+    return (
+       <section className = "orders">
                 <h2>{naam}</h2>
-                <h2>{productId}</h2>
-                <h2>{status}</h2>
+                <h3>{productId}</h3>
+                <h3>{status}</h3>
             </section>
-    );
+     );
 }
  
 export default PackageOrder;

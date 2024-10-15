@@ -1,21 +1,33 @@
-import './App.css'
-import Header from './components/header'
-import PackageOrder from './components/packageOrder'
-
+import "./App.css";
+import Header from "./components/Header";
+import Layout from "./components/Layout";
+import PackageOrder from "./components/PackageOrder";
 
 function App() {
-
   return (
     <>
-
-      <PackageOrder naam ='package1'  productId ="1" status ="delivered" />
-      <PackageOrder naam ='package2' productId ="2" status = "not delivered" />
-      <PackageOrder naam ='package3' productId ="3" status = "delivered" />
-      <PackageOrder naam ='package4' productId ="4" status = "delivered" />
-
-   
+      <Header />
+      <Layout>
+        <h1>Delivery Tracking</h1>
+        <br />
+        <PackageOrder
+          naam="package from rotterdam"
+          productId="ID:1"
+          status="delivered"
+        />
+        <PackageOrder
+          naam="package from Schiedam"
+          productId="ID:2"
+          status="depending"
+        />
+        <PackageOrder
+          naam="package from rotterdam"
+          productId="ID:3"
+          status="on the way"
+        />
+      </Layout>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
