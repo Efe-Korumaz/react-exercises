@@ -11,7 +11,7 @@ function App() {
         <h1>Delivery Tracking</h1>
         <br />
         <PackageOrder
-          naam="package from rotterdam"
+          naam="package from Rotterdam"
           productId="ID:1"
           status="delivered"
         />
