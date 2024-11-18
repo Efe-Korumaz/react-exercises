@@ -1,5 +1,5 @@
 
-    const Book = ({title, image, author}) => {
+    const Book = ({image, title, author}) => {
         return ( 
             <section>
         <img src={image} alt="" />
