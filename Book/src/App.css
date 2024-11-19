@@ -5,9 +5,18 @@
 }
 
 nav {
-  background-color: blueviolet;
+  background-color: black;
   width: 100vw;
   height: 10vh;
+}
+
+li {
+  display: flex;
+  gap: 3px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  background-color: black;
 }
 
 .container {
@@ -17,6 +26,6 @@ nav {
   justify-content: space-between;
   width: 80vw;
   margin: auto;
-  background-color: cornflowerblue;
+  background-color: darkgray;
 
 }

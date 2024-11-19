@@ -1,33 +1,26 @@
-import './App.css';
-import Book from './component/Book';
-import Header from './component/Header';
-import Layout from './component/Layout';
-import { useState } from 'react';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import NoPage from "./pages/NoPage";
+import Navigation from "./pages/Navigation"; // De navigatiecomponent
 
-function App() {
-  // State met boekenlijst
-  const [books, setBooks] = useState([
-    { id: 1, title: "Book1", author: "LOTM", image: "./images/images.jpg" },
-    { id: 2, title: "Book2", author: "ORV", image: "./images/orv.jpg" },
-    { id: 3, title: "Book3", author: "Jojo", image: "./images/jojo.jpg" },
-  ]);
-
+const App = () => {
   return (
-    <>
-      <Header />
-      <Layout>
-        {/* Map door de boekenlijst en render de Book-componenten */}
-        {books.map((book) => (
-          <Book 
-            key={book.id} 
-            title={book.title} 
-            author={book.author} 
-            image={book.image} 
-          />
-        ))}
-      </Layout>
-    </>
+    <BrowserRouter>
+      {/* De navigatie komt boven de Routes, zodat het altijd zichtbaar is */}
+      <Navigation />
+
+      <Routes>
+        {/* De route die naar de Home-pagina leidt */}
+        <Route index element={<Home />} /> {}
+        <Route path="/home" element={<Home />} />  
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NoPage />} />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
